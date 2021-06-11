@@ -116,7 +116,7 @@ const createWindow = async () => {
     dialog.showMessageBoxSync(mainWindow as BrowserWindow, {
       title: 'Failed to connect postgresql database',
       message: err,
-      detail: 'Please check connection info in dbConf.json.',
+      detail: 'Please check connection info in dbconf.json.',
       type: 'error',
     });
     app.quit();

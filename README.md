@@ -11,7 +11,7 @@ The app is mainly built upon:
 
 - Backend: **PostgreSQL 13**.
 - Schema: [ddl.sql](ddl.sql)
-- Connection config: [dbConf.json](src/dbConf.json)
+- Connection config: [dbconf.json](src/dbconf.json)
 
 ## Usage
 
