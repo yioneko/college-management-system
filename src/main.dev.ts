@@ -110,6 +110,8 @@ const createWindow = async () => {
   // eslint-disable-next-line
   new AppUpdater();
 
+  ipcMain.handle('get-app-path', () => app.getPath('exe'));
+
   ipcMain.on('connect-db-error', (_e, err) => {
     dialog.showMessageBoxSync(mainWindow as BrowserWindow, {
       title: 'Failed to connect postgresql database',
